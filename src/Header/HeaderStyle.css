@@ -1,5 +1,5 @@
 
-.header {
+.header-dark {
     font-family: 'Lexend Zetta Variable', sans-serif;
     color: white;
     font-weight: bold;
@@ -19,6 +19,28 @@
   
   animation: shine 1s linear infinite;
     
+}
+
+.header {
+  font-family: 'Lexend Zetta Variable', sans-serif;
+  color: white;
+  font-weight: bold;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  font-size: xx-large;
+  text-align: center;
+
+background: linear-gradient(to right, #6f00ff 20%, #0044ff 20%,  #ff00ff 40%, #008cff 60%,  #6f00ff 80% ,#0044ff 100%);
+
+background-size: 200% auto;
+
+color: #000;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+animation: shine 1s linear infinite;
+  
 }
 
 @-webkit-keyframes text-focus-in {

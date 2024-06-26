@@ -8,20 +8,36 @@ import { TextField } from './TextField/Textfield';
 import { MessageDump } from './MessageDump/MessageDump';
 import '@fontsource-variable/big-shoulders-display';
 import { GoToHeaderButton } from './GoToHeaderButton/GoToHeaderButton';
+import { ThemeToggle } from './ThemeToggle/ThemeToggle';
+import { useState } from 'react';
 
+
+
+    function App() {
+
+      let [darkMode, setDarkMode] = useState(true)
+
+      const toggleTheme = () => {
+        setDarkMode(!darkMode)
+      }
+      return (
+        <body>
+        {Wallpaper(darkMode)}
+        {ThemeToggle(darkMode, toggleTheme)}
+        {LibertyHeader(darkMode)}
+        <TextField/>
+        {MessageDump(darkMode)}
+        <GoToHeaderButton/>
+        </body>
+      )
+    }
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  
   <React.StrictMode>
-    <body>
-    <Wallpaper/>
-    <LibertyHeader/>
-    <TextField/>
-    <MessageDump/>
-    <GoToHeaderButton/>
-    </body>
-
+    <App/>
 
   </React.StrictMode>
 )

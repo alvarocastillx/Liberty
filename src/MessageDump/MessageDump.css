@@ -1,32 +1,41 @@
 
+
 .messageDump {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 60%;
-    border-radius: 5px;
-    min-height: 5rem;
-    gap: 1rem;
-    padding: 1rem;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  border-radius: 5px;
+  min-height: 5rem;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-h1 {
-    font-weight: bold;
-    font-family: 'Lexend Zetta Variable', sans-serif;
-    color: white;
-    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    align-self: center;
+
+
+.h1 {
+  font-weight: bold;
+  font-family: 'Lexend Zetta Variable', sans-serif;
+  color: rgb(0, 0, 0);
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  align-self: center;
+}
+
+.h1-dark {
+  font-weight: bold;
+  font-family: 'Lexend Zetta Variable', sans-serif;
+  color: rgb(255, 255, 255);
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  align-self: center;
 }
 
 .messageList {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 0.5rem;
-    justify-content: center;
-    
-    
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 @-webkit-keyframes text-focus-in {

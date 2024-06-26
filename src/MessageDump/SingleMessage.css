@@ -10,14 +10,35 @@
     -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
             width: 100%;
-    color:white;
+            color:rgb(0, 0, 0);
     border-width:2px;
     font-size: 1.25rem;
     flex:1;
-    
+    border-color: black;
   
           
     
+}
+
+.singleMessage-dark {
+  display: 	flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: 'Big Shoulders Display Variable', system-ui;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          width: 100%;
+          color:white;
+
+  border-width:2px;
+  font-size: 1.25rem;
+  flex:1;
+  
+
+        
+  
 }
 
 

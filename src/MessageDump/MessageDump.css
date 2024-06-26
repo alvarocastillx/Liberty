@@ -1,0 +1,55 @@
+
+.messageDump {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    border-radius: 5px;
+    min-height: 5rem;
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+
+h1 {
+    font-weight: bold;
+    font-family: 'Lexend Zetta Variable', sans-serif;
+    color: white;
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    align-self: center;
+}
+
+.messageList {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+    justify-content: center;
+    
+    
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }

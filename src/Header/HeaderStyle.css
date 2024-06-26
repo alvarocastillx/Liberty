@@ -1,0 +1,54 @@
+
+.header {
+    font-family: 'Lexend Zetta Variable', sans-serif;
+    color: white;
+    font-weight: bold;
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    font-size: xx-large;
+    text-align: center;
+  
+  background: linear-gradient(to right, #ee9ca7 20%, #ee9ca7 20%,  #ffdde1 40%, #ee9ca7 60%,  #ffdde1 80% ,#ee9ca7 100%);
+
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 1s linear infinite;
+    
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+ 
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }

@@ -1,0 +1,51 @@
+
+
+.singleMessage {
+    display: 	flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: 'Big Shoulders Display Variable', system-ui;
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            width: 100%;
+    color:white;
+    border-width:2px;
+    font-size: 1.25rem;
+    flex:1;
+    
+  
+          
+    
+}
+
+
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+.singleMessage:hover {
+    border-color:white;
+}

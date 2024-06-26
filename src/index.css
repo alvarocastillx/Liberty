@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  gap: 2rem;
+  overflow-x: hidden;
+  margin-top:5rem;
+  margin-bottom: 1rem;
+  
+  
+  }
+  :root {
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+    scrollbar-width: thin;    
+  }  
+
+  ::-webkit-scrollbar-track {
+    background-color: black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: grey;
+  }
+ 

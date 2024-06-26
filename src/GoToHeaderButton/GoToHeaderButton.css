@@ -1,0 +1,11 @@
+
+
+.gtheader {
+    border-radius: 20rem;
+    border-width: 5px;
+    border-color: white;
+    position: fixed;
+    top: 50rem;
+    right: 7.5rem;
+    
+}

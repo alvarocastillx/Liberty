@@ -10,6 +10,7 @@ import '@fontsource-variable/big-shoulders-display';
 import { GoToHeaderButton } from './GoToHeaderButton/GoToHeaderButton';
 import { ThemeToggle } from './ThemeToggle/ThemeToggle';
 import { useState } from 'react';
+import { Footer } from './Footer/Footer';
 
 
 
@@ -28,6 +29,7 @@ import { useState } from 'react';
         <TextField/>
         {MessageDump(darkMode)}
         <GoToHeaderButton/>
+        {Footer(darkMode)}
         </body>
       )
     }

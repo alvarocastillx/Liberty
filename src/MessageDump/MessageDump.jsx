@@ -21,7 +21,7 @@ export function MessageDump(darkMode) {
         try {
             
             const xhr = new XMLHttpRequest();
-            xhr.open('GET','http://127.0.0.1:5000/liberty/get')
+            xhr.open('GET','https://libertyapi.onrender.com/liberty/get')
             xhr.onloadend = function () {
                 let parsed = JSON.parse(xhr.response)
                 setLoading(false)

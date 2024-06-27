@@ -15,7 +15,7 @@ const submitMessage = (event) => {
         }
         else {
             const xhr = new XMLHttpRequest();
-            xhr.open('POST','http://127.0.0.1:5000/liberty/post')
+            xhr.open('POST','https://libertyapi.onrender.com/liberty/post')
             xhr.setRequestHeader('Content-type', 'application/json')
             const sendData = JSON.stringify({
                 'message':event.target.value,

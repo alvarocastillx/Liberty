@@ -9,3 +9,8 @@
     right: 7.5rem;
     
 }
+
+.gtheader:hover {
+    scale: 125%;
+    transition: 0.3s;
+}

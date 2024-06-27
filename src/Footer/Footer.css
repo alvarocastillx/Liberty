@@ -6,13 +6,15 @@
     align-items: center;
     width: 60%;
     gap: 2rem;
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .hr-footer {
     background: rgb(0, 0, 0);
     border-color: rgb(0, 0, 0);
     background-color:rgb(0, 0, 0);
-    width: 100%;
+    width: 67rem;
     
 }
 
@@ -35,3 +37,29 @@
     font-size: 0.75rem;
 
 }
+
+
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }

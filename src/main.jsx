@@ -11,6 +11,8 @@ import { GoToHeaderButton } from './GoToHeaderButton/GoToHeaderButton';
 import { ThemeToggle } from './ThemeToggle/ThemeToggle';
 import { useState } from 'react';
 import { Footer } from './Footer/Footer';
+import { HeaderBar } from './HeaderBar/HeaderBar';
+import { LoginDialog } from './LoginDialog/LoginDialog';
 
 
 
@@ -18,18 +20,29 @@ import { Footer } from './Footer/Footer';
 
       let [darkMode, setDarkMode] = useState(true)
 
+      let [dialogOpened, setDialogOpened] = useState(false)
+
+      let [userName, setUserName] = useState('Anonymous')
+      
+      const changeDialogState = () => {
+        setDialogOpened(!dialogOpened)
+      }
+
       const toggleTheme = () => {
         setDarkMode(!darkMode)
       }
+
+
       return (
         <body>
-        {Wallpaper(darkMode)}
-        {ThemeToggle(darkMode, toggleTheme)}
-        {LibertyHeader(darkMode)}
-        <TextField/>
-        {MessageDump(darkMode)}
-        <GoToHeaderButton/>
-        {Footer(darkMode)}
+          {Wallpaper(darkMode)}
+          {LoginDialog(dialogOpened, darkMode, setDialogOpened, setUserName)}
+          {HeaderBar(darkMode, toggleTheme, dialogOpened, changeDialogState)}
+          {LibertyHeader(darkMode)}
+          {TextField(userName)}
+          {MessageDump(darkMode, userName)}
+          <GoToHeaderButton/>
+          {Footer(darkMode)}
         </body>
       )
     }

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import '../MessageDump/MessageDump.css'
 import { SingleMessage } from './SingleMessage'
 
-export function MessageDump(darkMode) {
+export function MessageDump(darkMode, userName) {
     
     let [data, setData] = useState([])
     let [loading, setLoading] = useState(true)
@@ -26,6 +26,7 @@ export function MessageDump(darkMode) {
                 let parsed = JSON.parse(xhr.response)
                 setLoading(false)
                 setData(parsed)  
+                console.log(parsed)
             }
             xhr.send()
         }
@@ -49,7 +50,7 @@ export function MessageDump(darkMode) {
                 console.log()
                 ) : (
                     data.list.map((messageObj, index) => (
-                        <SingleMessage key={messageObj._id.$oid} message={messageObj.message}  time={messageObj.created_at.$date} darkMode={darkMode}/>
+                        <SingleMessage key={messageObj._id.$oid} message={messageObj.message}  time={messageObj.created_at.$date} darkMode={darkMode} userName={messageObj.name}/>
                     ))
                 )
             }

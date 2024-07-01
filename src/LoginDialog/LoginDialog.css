@@ -1,0 +1,105 @@
+
+
+.logindialog-dark {
+    position: fixed;
+    width: 39rem;
+    height: 30rem;
+    background: #fff;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    border-radius: 1rem;                
+    animation: popup 0.5s linear;
+    filter: drop-shadow(16px 16px 16px white);
+    border-width: 3px;
+    border-color: black;
+    gap: 2rem;
+}   
+
+.dialogtitle-dark {
+    font-size: larger;
+    font-family: 'Lexend Zetta Variable', sans-serif;
+}
+
+.logininput-dark {
+    width: 50%;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+
+
+.logindialog {
+    position: fixed;
+    width: 39rem;
+    height: 30rem;
+    background: #000000;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    border-radius: 1rem;                
+    animation: popup 0.5s linear;
+    filter: drop-shadow(16px 16px 16px rgb(0, 0, 0));
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    gap: 2rem;
+}   
+
+.dialogtitle {
+    font-size: larger;
+    font-family: 'Lexend Zetta Variable', sans-serif;
+    color: white;
+}
+
+.logininput{
+    width: 50%;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+.logindialogbutton {
+    font: inherit;
+    background-color: #f0f0f0;
+    border: 0;
+    color: #242424;
+    border-radius: 0.5em;
+    font-size: 1.2rem;
+    padding: 0.375em 1em;
+    font-weight: 600;
+    text-shadow: 0 0.0625em 0 #fff;
+    box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef, 0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede, 0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+    transition: 0.15s ease;
+}
+.logindialogbutton:active, .logindialogbutton:hover {
+    translate: 0 0.225em;
+    box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef, 0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede, 0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+    cursor: pointer;
+}
+@keyframes popup {     
+    0%{
+        opacity: 0;
+    } 
+    25% {
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}       

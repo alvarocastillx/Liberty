@@ -1,13 +1,9 @@
 import '../TextField/TextField.css'
 import React, { useState } from "react";
 
-export function TextField() {
-    return (
-        <input className="textfield" maxLength={140} type="text" onKeyDown={submitMessage}/>
-    )
-}
+export function TextField(userName) {
 
-
+    
 const submitMessage = (event) => {
     if (event.key == 'Enter') {
         if (event.target.value == 'admin') {
@@ -19,12 +15,12 @@ const submitMessage = (event) => {
             xhr.setRequestHeader('Content-type', 'application/json')
             const sendData = JSON.stringify({
                 'message':event.target.value,
-                'name':'admin'
+                'name': userName
             })
             xhr.send(sendData);
             xhr.onloadend = function() {
-            event.target.value = ''
-            postMessage('Su mensaje se ha enviado correctamente.')
+                event.target.value = ''
+                postMessage('Su mensaje se ha enviado correctamente.')
             }
         }
         
@@ -33,4 +29,13 @@ const submitMessage = (event) => {
           
     }
 }
+
+
+    return (
+        <input className="textfield" maxLength={140} type="text" onKeyDown={submitMessage}/>
+    )
+}
+
+
+
 

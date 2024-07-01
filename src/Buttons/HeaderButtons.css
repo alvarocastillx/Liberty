@@ -1,0 +1,7 @@
+
+
+.headerbutton:hover {
+    transform: scale(125%);
+    transition: 0.3s;
+    display: inline-flex;
+}

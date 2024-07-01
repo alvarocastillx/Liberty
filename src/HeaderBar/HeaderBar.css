@@ -1,0 +1,37 @@
+
+.headerbar {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background: rgb(0, 0, 0);
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 9rem;
+    border-width: 3px;
+    border-color: black;
+}
+
+
+.headerbar-dark {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background: white;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 9rem;
+    border-width: 3px;
+    border-color: black;
+}
+
+.verticalline {
+    border-right: rgb(255, 255, 255) solid ;
+    min-height: 2rem;
+}
+
+.verticalline-dark {
+    border-right: black solid ;
+    min-height: 2rem;
+}
